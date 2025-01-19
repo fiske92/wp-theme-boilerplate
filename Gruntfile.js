@@ -2,8 +2,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
             options: {
-                implementation: require('node-sass'), // Use node-sass as the compiler
-                outputStyle: 'compressed' // or 'compressed'
+                implementation: require('node-sass'),
+                outputStyle: 'compressed'
             },
             dist: {
                 files: {
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'assets/public/dist/js/child.min.js': ['assets/public/src/js/*.js']
+                    'assets/public/dist/js/child.min.js': 'assets/public/src/js/child-default.js'
                 }
             }
         },
